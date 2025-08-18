@@ -1,1 +1,2 @@
-# Ex-Estrutura-de-dados-
+# Ex-Estrutura-de-dados
+*Guilherme Henrique dos Santos Valente 

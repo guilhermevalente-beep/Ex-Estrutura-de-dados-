@@ -7,6 +7,7 @@ typedef struct
     int right;
 } REALTYPE;
 
+//quebra o valor real em dois inteiros, um para a parte inteira e outro para a parte decimal 
  REALTYPE breakValue()
 {
     REALTYPE valor;
@@ -21,6 +22,7 @@ typedef struct
     return valor;
 } 
 
+//combina dois valores inteiros, para que o da esquerda fique antes da vírgula e o da direita depois da vírgula 
 float combValue (REALTYPE y)
 {
     int digitos = 0;
@@ -40,6 +42,7 @@ float combValue (REALTYPE y)
     return k;    
 }
 
+//soma dois valores armazenados nas estruturas 
 void soma(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);
@@ -47,6 +50,7 @@ void soma(REALTYPE x, REALTYPE y)
     printf("\n A soma dos valores é: %.2f", k+j);
 }
 
+//subtrai o valor real da segunda estrutura do valor real da primeira estrutura 
 void subtracao(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);
@@ -54,6 +58,7 @@ void subtracao(REALTYPE x, REALTYPE y)
     printf("\n A subtração dos valores é: %.2f", k-j);
 }
 
+//multiplica os valores reais de duas estruturas 
 void multiplicacao(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);
@@ -61,6 +66,7 @@ void multiplicacao(REALTYPE x, REALTYPE y)
     printf("\n A multiplicação dos valores é: %.2f", k*j);
 }
 
+//divide o valor real da primeira estrutura pelo valor real da segunda estrutura 
 void divisao(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);

@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-
 // Função para ler a ordem da matriz
-int leituraN() {
+int leituraN() 
+{
     int n;
     do {
         printf("Digite a ordem da matriz (max %d): ", 40);
@@ -85,20 +85,16 @@ int main() {
             case 1:
                 somaMatriz(A, B, C, n);
                 break;
-
             case 2:
                 multiplicaMatriz(A, B, C, n);
                 break;
-
             case 3:
                 printf("Saindo...\n");
                 break;
-
             default:
                 printf("Opção inválida.\n");
         }
 
     } while (opcao != 3);
-
     return 0;
 }

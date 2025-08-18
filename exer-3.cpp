@@ -19,7 +19,6 @@ typedef struct
     printf("\nValor da esquerda: %d", valor.left);
     printf("\nValor da direita: %d\n\n", valor.right);
     return valor;
-
 } 
 
 float combValue (REALTYPE y)
@@ -38,9 +37,9 @@ float combValue (REALTYPE y)
         
     float k = (float) y.left + (float) y.right / pow(10, digitos);
     printf("\nValor real: %.2f", k);
-    return k;
-    
+    return k;    
 }
+
 void soma(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);
@@ -54,12 +53,14 @@ void subtracao(REALTYPE x, REALTYPE y)
     float j = combValue(y);
     printf("\n A subtração dos valores é: %.2f", k-j);
 }
+
 void multiplicacao(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);
     float j = combValue(y);
     printf("\n A multiplicação dos valores é: %.2f", k*j);
 }
+
 void divisao(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);
@@ -69,7 +70,6 @@ void divisao(REALTYPE x, REALTYPE y)
     else     
         printf("\n O quociente dos valores é: %.2f", k/j);
 }
-
 
 int main()
 {

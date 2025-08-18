@@ -22,7 +22,7 @@ typedef struct
     return valor;
 } 
 
-//combina dois valores inteiros, para que o da esquerda fique antes da vírgula e o da direita depois da vírgula 
+//combina dois valores inteiros de uma estrutura, para que o da esquerda fique antes da vírgula e o da direita depois da vírgula 
 float combValue (REALTYPE y)
 {
     int digitos = 0;
@@ -42,7 +42,7 @@ float combValue (REALTYPE y)
     return k;    
 }
 
-//soma dois valores armazenados nas estruturas 
+//soma os valores reais de duas estruturas diferentes 
 void soma(REALTYPE x, REALTYPE y)
 {
     float k = combValue(x);

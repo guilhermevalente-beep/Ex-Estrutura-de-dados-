@@ -19,7 +19,6 @@ No* criarLista()
       exit(1);
    }
 
-   // Lista circular: cabeÁa aponta pra ela mesma
    cab->prox = cab;
    cab->ant = cab;
 
@@ -46,14 +45,14 @@ void inserirOrdenado(No *cab, Item x)
 
    if (ant->prox != cab && ant->prox->info == x)
    {
-      printf("O item j· est· na lista.\n");
+      printf("O item j√° est√° na lista.\n");
       return;
    }
 
    No *novo = (No*) malloc(sizeof(No));
    if (novo == NULL)
    {
-      printf("Erro ao alocar memÛria.\n");
+      printf("Erro ao alocar mem√≥ria.\n");
       return;
    }
 
@@ -73,7 +72,7 @@ void removerOrdenado(No *cab, Item x)
 
    if (ant->prox == cab || ant->prox->info != x)
    {
-      printf("O item n„o est· na lista.\n");
+      printf("O item n√£o est√° na lista.\n");
       return;
    }
 
@@ -83,7 +82,7 @@ void removerOrdenado(No *cab, Item x)
 
    free(remover);
 
-   printf("Item removido com sucesso.\n");
+   printf("Item removido!\n");
 }
 
 void imprimirLista(No *cab)
@@ -170,4 +169,5 @@ int main()
    } while (opcao != 0);
    return 0;
 }
+
 
